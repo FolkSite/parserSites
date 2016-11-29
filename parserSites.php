@@ -59,7 +59,7 @@ class parserSites{
 			{ 
 			   $postDataStr .= $k . '='.$v.'&'; 
 			}
-			$postDataStr = trim($postDataStr, '&');
+			$this->postDataStr = trim($postDataStr, '&');
 
 		} else {
 			$this->getErrorText( 103 );
